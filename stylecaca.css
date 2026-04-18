@@ -1,0 +1,44 @@
+/* Reset & Pengaturan Dasar */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #f9f9f9; color: #333; }
+.container { max-width: 1000px; margin: auto; padding: 20px; }
+
+/* Navbar */
+.navbar { background: #2d5a27; color: white; padding: 1.5rem 0; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+/* Hero Section */
+.hero { display: flex; align-items: center; justify-content: space-between; margin-top: 50px; gap: 40px; }
+
+.product-image img { 
+    width: 100%; 
+    max-width: 400px; 
+    border-radius: 20px; 
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.product-image img:hover { transform: scale(1.02); }
+
+.product-info { flex: 1; }
+.product-info h2 { font-size: 2.5rem; color: #2d5a27; margin-bottom: 20px; }
+
+/* Tombol */
+.btn-pesan {
+    display: inline-block;
+    background-color: #2d5a27;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin-top: 20px;
+}
+.btn-pesan:hover { background-color: #1e3d1a; }
+
+/* Responsif untuk HP */
+@media (max-width: 768px) {
+    .hero { flex-direction: column; text-align: center; margin-top: 20px; }
+    .product-info h2 { font-size: 1.8rem; }
+    .product-image img { max-width: 300px; }
+}
